@@ -57,7 +57,7 @@ app.post('/', upload.single('image'), (req, res, next) => {
     });
 });
 
-mongoose.connect(process.env.MONGO_URL,
+mongoose.connect("mongodb+srv://jerintom:jerintom@cluster0.jsf59.mongodb.net/?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }, err => {
         console.log('connected')
     });
