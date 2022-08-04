@@ -11,4 +11,4 @@ var imageSchema = new mongoose.Schema({
 });
   
   
-module.exports = new mongoose.model('campaigns', imageSchema);
+module.exports = new mongoose.model('Images', imageSchema);
